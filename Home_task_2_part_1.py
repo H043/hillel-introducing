@@ -48,14 +48,14 @@
 # my_bool_2 = my_value % 2 == 0
 # print(my_bool_1 and not my_bool_2)
 
-# value = input("ENTER NUMBER: ")
-# value = int(value)
-#
-# if value % 2 == 0 and value % 3 == 0:
-#     print("Number divides by 6")
-# elif value % 2 == 0:
-#     print("Number divides by 2")
-# elif value % 3 == 0:
-#     print("Number divides by 3")
-# else:
-#     print("Number can not divides by 2, nor by 3")
+value = input("ENTER NUMBER: ")
+value = int(value)
+
+if value % 2 == 0 and value % 3 == 0:
+    print("Number divides by 6")
+elif value % 2 == 0:
+    print("Number divides by 2")
+elif value % 3 == 0:
+    print("Number divides by 3")
+else:
+    print("Number can not divides by 2, nor by 3")
