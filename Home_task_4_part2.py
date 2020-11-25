@@ -53,5 +53,4 @@ for symb_1 in my_string:
         value = int(symb_1 + symb_2)
         print(value, type (value))
 
-
 #type добавляю для себя как для проверки
