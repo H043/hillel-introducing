@@ -1,0 +1,43 @@
+# value = str(input("ENTER NUMBER WITH 0"))
+# my_zero = "0"
+# count = value.count(my_zero)
+# print(count)
+#########################################
+
+# value = str(input("ENTER NUMBER WITH 0"))
+# my_zero = "0"
+# count = value[::-1].count(my_zero)
+# print(count)
+# #########################################
+#
+# my_list_1 = [1, 2, 3, 4, 5]
+# my_list_2 = [2, 15, 20, 25]
+# my_result = []
+# for res in my_list_1:
+#     if res % 2 == 0:
+#         my_result.append(res)
+# for res in my_list_2:
+#     if res % 2 != 0:
+#         my_result.append(res)
+#
+# print(my_result)
+# #########################################
+
+# my_list = [1, 2, 3, 4]
+# new_list = [my_list[1], my_list[2], my_list[3], my_list[0]]
+# print(new_list)
+# #########################################
+
+# my_list = [1, 2, 3, 4]
+# my_list.insert(my_list[3], my_list[0])
+# my_list.pop(0)
+# print(my_list)
+# #########################################
+
+my_str = "10 elrkt 234 ert 24 ert 4332"
+my_list = []
+for symbol in my_str:
+    if symbol.isdigit():
+        my_list.append(symbol)
+
+print(my_list)

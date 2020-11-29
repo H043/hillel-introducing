@@ -1,1 +1,4 @@
+my_list = ["aa", "bb", "cc", "dd"]
+my_new_list = list(enumerate(my_list))
+
 

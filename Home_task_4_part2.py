@@ -54,3 +54,4 @@ for symb_1 in my_string:
         print(value, type (value))
 
 #type добавляю для себя как для проверки
+
