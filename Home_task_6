@@ -1,4 +1,15 @@
-my_list = ["aa", "bb", "cc", "dd"]
-my_new_list = list(enumerate(my_list))
+my_list = ["qwe", "rty", "asd", "fgh"]
 
+new_list = []
+for index, value in enumerate(my_list):
+    if not index % 2:
+        new_list.append(value[::-1])
+    else:
+        new_list.append(value)
+print(new_list)
 
+new_list2 = []
+for chr("a") in my_list:
+    if chr == "a":
+        new_list2.append(a)
+print(new_list2)
