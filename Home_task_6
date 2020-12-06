@@ -33,28 +33,33 @@ for index, symbol in enumerate(my_list):
 print(new_list)
 ########################################
 
-my_str = "hasdfk dfeqw ldsghe bef"
-my_list = []
+my_str = "bbaassddffgg"
+my_set = set(my_str)
+my_list = list(''.join(my_set))
+
+print(type(my_list), my_list)
+
+#method 2. Пробовал разные комбинации, такой вариант получается тоже рабочий. Но я понимаю, что задача стоит пробовать разные методы или все таки способ не верен?
+my_str = "bbaassddffgg"
+my_list2 = []
 for symbol in my_str:
-    if symbol not in my_list:
-        my_list.append(symbol)
-print(len(my_list), my_list)
-#######################################
+    if symbol not in my_list2:
+        my_list2.append(symbol)
+print(my_list2)
+######################################
 my_str1 = "assf34"
 my_str2 = "sdfgegw4"
 my_list = []
 for symbol in my_str1 and my_str2:
     if symbol not in my_list:
         my_list.append(symbol)
-print(len(my_list), my_list)
+print(my_list)
 #######################################
 
-my_str1 = "assf3ynfwwt4"
-my_str2 = "sdfgedynwfdgw4"
-my_list = []
-for symbol in my_str1:
-    for symbol in my_str2:
-        if symbol not in my_list:
-            my_list.append(symbol)
-print(len(my_list), my_list)
+my_str1 = "asdddfz"
+my_str2 = "aaasdfrb"
+my_set1 = set(my_str1)
+my_set2 = set(my_str2)
+new_list = list(my_set1.intersection(my_set2))
+print(new_list)
 ########################################
