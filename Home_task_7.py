@@ -25,11 +25,8 @@ for symbol in my_team:
     my_team_age.append(symbol["age"])
     my_team_name.append(symbol["name"])
 aver_age = sum(my_team_age) / len(my_team_age)
-# youngest = my_team[(min(my_team_age))]
-for length in my_team_name:
-    asd.append(len(length))
-
 print(my_team_age,
       my_team_name,
     min(my_team_age))
-# print(youngest)
+
+print(my_team)
