@@ -1,6 +1,7 @@
 import random
 from random import randint
 
+
 def generate_string(min_limit=100, max_limit=1000):
     str_len = random.randint(min_limit, max_limit)
     r_list = [chr(random.randint(ord("a"), ord("z"))) for _ in range(str_len)]
@@ -18,34 +19,22 @@ def letter_to_space(str_to_transform):
         str_to_transform = str_to_transform[:index] + " " + str_to_transform[index + 1:]
     return str_to_transform
 
-# def change_space_to_newline(str_to_transform):
-#     count_new_line = len(str_to_transform) // 3
-#     new_line_indexes = []
-#     while len(new_line_indexes) < count_new_line:
-#         index = random.randint(10, len(str_to_transform) - 10)
-#         if index not in new_line_indexes:
-#             new_line_indexes.append(index)
-#     for index in new_line_indexes:
-#         str_to_transform = str_to_transform[:index] + "\n" + str_to_transform[index + 1:]
-
 
 def change_first_symbol(word):
     return word.capitalize()
+
 
 def change_last_symbol(word):
     punctuation = ".,!?\n"
     word = word[:-1] + random.choice(punctuation) if len(word) > 3 else word
     return word
 
+
 def change_word_to_number(word):
     if len(word) <= 3:
         number_list = [str(random.randint(0, 9)) for _ in range(len(word))]
         word = "".join(number_list)
     return word
-
-
-
-
 
 
 def random_word_transformation(word):
